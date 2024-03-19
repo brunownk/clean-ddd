@@ -1,4 +1,4 @@
-import { QuestionsCommentRespository } from '../repositories/question-comments-repository'
+import { QuestionCommentsRespository } from '../repositories/question-comments-repository'
 
 interface DeleteQuestionCommentUseCaseRequest {
   authorId: string
@@ -9,7 +9,7 @@ interface DeleteQuestionCommentUseCaseResponse {}
 
 export class DeleteQuestionCommentUseCase {
   constructor(
-    private questionCommentsRepository: QuestionsCommentRespository,
+    private questionCommentsRepository: QuestionCommentsRespository,
   ) {}
 
   async execute({
