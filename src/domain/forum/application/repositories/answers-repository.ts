@@ -1,5 +1,4 @@
+import { InMemoryRepository } from '@/core/repositories/in-memory-repository'
 import { Answer } from '../../enterprise/entities/answer'
 
-export interface AnswersRespository {
-  create(answer: Answer): Promise<void>
-}
+export interface AnswersRespository extends InMemoryRepository<Answer> {}
