@@ -12,14 +12,6 @@ describe('Get Question By Slug', () => {
     sut = new GetQuestionBySlugUseCase(inMemoryQuestionsRepository)
   })
 
-  // it('should not be able to get a question by slug if it does not exist', async () => {
-  //   const { question } = await sut.execute({
-  //     slug: 'any_slug',
-  //   })
-
-  //   expect(question).toBeNull()
-  // })
-
   it('should be able to get a question by slug', async () => {
     const newQuestion = makeQuestion({
       slug: Slug.create('example-question'),
